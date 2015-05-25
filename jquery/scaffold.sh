@@ -13,7 +13,7 @@ echo "Setting up project '$projname'"..
 cd ~/Desktop
 mkdir $projname
 cd $projname
-mkdir js img css js/lib css/lib
+mkdir js img css js/lib css/lib spec
 
 # README MD
 echo ''
@@ -28,6 +28,13 @@ echo 'downloading scaffolding files'
 #Files
 curl http://code.jquery.com/jquery-1.11.3.js > ./js/lib/jquery-1.11.3.js
 curl normalize-css.googlecode.com/svn/trunk/normalize.css > ./css/lib/normalize.css
+curl chaijs.com/chai.js > ./spec/chai.js
+
+curl $url/spec/mocha.css > ./spec/mocha.css
+curl $url/spec/mocha.js > ./spec/mocha.js
+curl $url/spec/specs.js > ./spec/specs.js
+
+curl $url/spec/spec-runner.html > ./spec/spec-runner.html
 
 curl $url/js/script.js > ./js/script.js
 curl $url/css/style.css > ./css/style.css
