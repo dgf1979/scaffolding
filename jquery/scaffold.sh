@@ -32,6 +32,9 @@ curl normalize-css.googlecode.com/svn/trunk/normalize.css > ./css/lib/normalize.
 curl $url/js/script.js > ./js/script.js
 curl $url/css/style.css > ./css/style.css
 curl $url/sample.html > ./sample.html
+curl $url/server.sh > ./server.sh
+
+chmod +x server.sh
 
 # GIT
 echo ''
