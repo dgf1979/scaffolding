@@ -40,6 +40,7 @@ curl $url/js/script.js > ./js/script.js
 curl $url/css/style.css > ./css/style.css
 curl $url/sample.html > ./sample.html
 curl $url/server.sh > ./server.sh
+curl $url/.eslintrc > ./.eslintrc
 
 chmod +x server.sh
 

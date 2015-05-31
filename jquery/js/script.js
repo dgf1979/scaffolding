@@ -1,14 +1,14 @@
-"use strict";
+//raw js
+var foo = function(bar) {
+  "use strict";
+  return false;
+};
 
 
 //jQuery
 $( document ).ready(function() {
+  "use strict";
     console.log( "jQuery Ready" );
 
-    $("#jqtest").text('jQuery Ready')
+    $("#jqtest").text("jQuery Ready");
 });
-
-//raw js
-var foo = function(bar) {
-  return false;
-};
